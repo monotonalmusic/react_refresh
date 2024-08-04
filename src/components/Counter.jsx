@@ -1,12 +1,18 @@
 import { useState } from "react";
 
+// Hvad er fejlen her og hvordan løses den?
+
 const Counter = () => {
   const [count, setCount] = useState(0);
 
+  const increment = () => {
+    count = count + 1;
+  };
+
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
     </div>
   );
 };

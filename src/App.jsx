@@ -1,18 +1,17 @@
 import "./App.css";
-import Counter from "./components/Counter";
-import Greeting from "./components/Greeting";
-import HelloWorld from "./components/HelloWorld";
-import Logger from "./components/Logger";
 
-function App() {
+// Hvad er fejlen her og hvordan løses den?
+
+const Greeting = () => {
+  return <h1>Hello, {name}!</h1>;
+};
+
+const App = () => {
   return (
     <>
-      <HelloWorld />
-      <Greeting name='Anne' />
-      <Counter />
-      <Logger />
+      <Greeting name='Alice' />
     </>
   );
-}
+};
 
 export default App;
