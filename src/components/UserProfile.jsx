@@ -6,7 +6,7 @@ const UserProfile = () => {
   const [user, setUser] = useState({ name: "John", age: 25 });
 
   const updateAge = () => {
-    setUser({ age: 26 }); // Fejl: Overskriver hele user objektet
+    setUser({ age: 26 });
   };
 
   return (
