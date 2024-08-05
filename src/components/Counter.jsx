@@ -5,8 +5,10 @@ import { useState } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
 
+  //bruge setCount til at opdatere count
+
   const increment = () => {
-    count = count + 1;
+    setCount(count + 1);
   };
 
   return (

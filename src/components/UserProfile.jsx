@@ -6,7 +6,9 @@ const UserProfile = () => {
   const [user, setUser] = useState({ name: "John", age: 25 });
 
   const updateAge = () => {
-    setUser({ age: 26 });
+    //name skal også håndteres i setUser
+
+    setUser({ name: user.name, age: 26 });
   };
 
   return (

@@ -4,9 +4,11 @@ const ItemList = () => {
   const items = ["Apple", "Banana", "Cherry"];
 
   return (
+    //key skal tilføjes
+
     <ul>
-      {items.map((item) => (
-        <li>{item}</li>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
     </ul>
   );
